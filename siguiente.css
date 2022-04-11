@@ -1,28 +1,5 @@
-*{
-    max-width:100%;
-    box-sizing:border-box;
-}
-
 body{
-    Background-color: rgb(46, 43, 43);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 200px;
-    padding: 60px;
-}
-p{
-    background-color: rgb(245, 242, 236);
-}
-header{
-    background-color: rgb(245,242,236);
-}
-section{
-    background-color:rgb(245,242,236)
-}
-footer{
-    background-color: rgb(245,242,236);
-}
-a{
-    background-color: rgb(245,242,236);
+    background-color: rgb(46, 43, 43);
 }
 .social{
     position:fixed;
@@ -67,3 +44,43 @@ a{
     padding-bottom:1.5em;
     outline: 3px solid rgb(31, 29, 29);
 }
+form{
+    color: rgb(255, 255, 255);
+}
+.contenedor{
+    width: 100%;
+    margin:auto;
+}
+img{
+    width: 95%;
+    height: 95%;
+}
+.persona-columna{
+    margin: 5px;
+}
+.personas .contenedor{
+    display:grid;
+}
+@media(min-width:520px){
+    .personas .contenedor{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+@media(min-width:728px){
+    .personas .contenedor{
+        grid-template-columns:repeat(3, 33, 3%);
+    }
+}
+@media(min-width:1024px){
+    .personas .contenedor{
+        grid-template-columns:repeat(4, 25%);
+    }
+    @media(min-width: 1200px){
+        .contenedor{
+            width: 1200px;
+        }
+    }
+    .personas .contenedor{
+        background-color: #cf7399;
+        border-radius: 3em;
+        padding:1em;}
